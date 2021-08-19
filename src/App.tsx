@@ -1,13 +1,13 @@
-function App() {
-  let hi = '';
+import AppRouter from './AppRouter';
+import Header from './components/common/Header';
 
-  console.log(hi);
+function App() {
   return (
-    <div>
-      <div>
-        <h1 className="text-warning">Hi! how are you?</h1>
-      </div>
-    </div>
+    <>
+      <AppRouter>
+        <Header />
+      </AppRouter>
+    </>
   );
 }
 
